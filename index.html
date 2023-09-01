@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/fruit6.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font {
+        font-family: "Lato", sans-serif;
+      }
+      .card {
+        cursor: pointer;
+      }
+    </style>
+    <!-- TailWind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <title>PH Tube</title>
+  </head>
+  <body>
+    <!-- Nav bar section -->
+    <section class="navbar w-full">
+      <div
+        class="nav-container w-[90%] md:w-[90%] lg:w-[90%] m-auto h-[100px] flex justify-between gap-[50px] md:gap-0 lg:gap-0"
+      >
+        <div class="logo">
+          <img
+            class="w-[100%] md:w-[100%] lg:w-[100%]"
+            src="./images/Logo.png"
+            alt=""
+          />
+        </div>
+        <button
+          class="btn btn-sm md:btn-md lg:btn-md bg-[#25252533] text-[#252525] text-[10px] md:text-[15px] lg:text-[15px]"
+        >
+          Sort By View
+        </button>
+        <button
+          class="btn btn-sm md:btn-md lg:btn-md bg-[#FF1F3D] hover:bg-[#FF1F3D] text-[#fff] text-[10px] md:text-[15px] lg:text-[15px]"
+        >
+          Blog
+        </button>
+      </div>
+    </section>
+    <div class="divider w-[90%] h-[1px] bg-[#17171733] m-auto"></div>
+
+    <!-- Categories buttons -->
+    <section class="category-btn-container w-[90%] m-auto mt-4">
+      <div id="category-buttons" class="w-full flex justify-center gap-7"></div>
+    </section>
+
+    <!-- Video Cards -->
+    <section class="video-cards">
+      <div
+        id="cards-container"
+        class="cards-container w-[90%] m-auto my-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+      ></div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
