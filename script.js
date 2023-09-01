@@ -1,7 +1,6 @@
 // Fetch data from category API
-let categories = [];
-
 let fetchCategoryButtons = async () => {
+  let categories = [];
   await fetch("https://openapi.programming-hero.com/api/videos/categories/")
     .then((response) => response.json())
     .then((data) => categories.push(data));
@@ -13,8 +12,8 @@ fetchCategoryButtons();
 
 // Display buttons according to the data fetched from API
 let displayCategoryButtons = (category) => {
-  let categories = category[0].data;
   let buttonParent = document.getElementById("category-buttons");
+  let categories = category[0].data;
 
   categories.forEach((categoryItem) => {
     let button = document.createElement("button");
@@ -29,9 +28,8 @@ let displayCategoryButtons = (category) => {
 };
 
 // Fetch data from Videos API
-let videos = [];
-
 let fetchVideoInfo = async (id) => {
+  let videos = [];
   await fetch(`https://openapi.programming-hero.com/api/videos/category/${id}`)
     .then((response) => response.json())
     .then((data) => videos.push(data));
@@ -39,14 +37,14 @@ let fetchVideoInfo = async (id) => {
   displayVideoInfo(videos);
 };
 
-// fetchVideoInfo(1000);
-
+// Display Video cards
 let displayVideoInfo = (video) => {
   let cardsContainer = document.getElementById("cards-container");
+  cardsContainer.textContent = "";
   let videoInfo = video[0].data;
   videoInfo.forEach((item) => {
     let card = document.createElement("div");
-    // console.log(item);
+
     card.innerHTML = `
     <div class="card bg-base-100 shadow-xl">
     <figure class="cdx">
