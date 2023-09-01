@@ -44,6 +44,28 @@ let displayVideoInfo = (video) => {
   let cardsContainer = document.getElementById("cards-container");
   cardsContainer.textContent = "";
   let videoInfo = video[0].data;
+
+  if (videoInfo.length <= 0) {
+    let notFound = document.getElementById("not-found");
+    notFound.classList.remove("hidden");
+    notFound.innerHTML = `    
+    <section class="not-found">
+    <div class="nf-container w-[90%] m-auto">
+      <img
+        class="w-[20%] md:w-[15%] lg:w-[15%] m-auto"
+        src="./images/Icon.png"
+        alt=""
+      />
+      <h2
+        class="text-center mt-5 font-bold text-[20px] md:text-[20px] lg:text-[32px]"
+      >
+        Oops!! Sorry, There is no <br />
+        content here
+      </h2>
+    </div>
+  </section>`;
+  }
+
   videoInfo.forEach((item) => {
     let card = document.createElement("div");
 
