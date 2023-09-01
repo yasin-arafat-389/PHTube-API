@@ -37,6 +37,8 @@ let fetchVideoInfo = async (id) => {
   displayVideoInfo(videos);
 };
 
+fetchVideoInfo(1000);
+
 // Display Video cards
 let displayVideoInfo = (video) => {
   let cardsContainer = document.getElementById("cards-container");
