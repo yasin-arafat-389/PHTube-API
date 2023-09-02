@@ -1,3 +1,5 @@
+// Global scope
+
 // Fetch data from category API
 let fetchCategoryButtons = async () => {
   let categories = [];
@@ -117,3 +119,5 @@ let displayVideoInfo = (video) => {
     cardsContainer.appendChild(card);
   });
 };
+
+// Sort videos upon clicking a button

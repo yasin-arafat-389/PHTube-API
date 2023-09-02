@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="retro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/fruit6.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font {
+        font-family: "Lato", sans-serif;
+      }
+      .card {
+        cursor: pointer;
+      }
+    </style>
+    <!-- TailWind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <title>PH Tube</title>
+  </head>
+  <body>
+    <div class="blog-container w-[90%] md:w-[60%] lg:w-[40%] m-auto mt-[70px]">
+      <!-- Blog 1 -->
+      <div class="card bg-[#fff] shadow-xl mb-12">
+        <div
+          class="info flex flex-col md:flex-row lg:flex-row items-center gap-4 m-6"
+        >
+          <div class="avatar">
+            <div class="w-[70px] mask mask-hexagon">
+              <img src="./images/profile-picture-2.jpg" />
+            </div>
+          </div>
+          <div class="sub-info flex flex-col">
+            <p
+              class="text-[20px] font-semibold text-center md:text-left lg:text-left"
+            >
+              Jese Leos
+            </p>
+            <p
+              class="text-[15px] md:text-[12px] lg:text-[15px] text-center md:text-left lg:text-left"
+            >
+              Graphic Designer, educator & CEO Flowbite <br />
+              Feb 8, 2022
+            </p>
+          </div>
+        </div>
+        <div class="h-[2px] bg-gray-400 w-[90%] m-auto"></div>
+        <div class="blog-info px-9 pb-9">
+          <h1
+            class="text-[25px] md:text-[30px] lg:text-[30px] text-center my-2"
+          >
+            Discussion of the scope of var, let, and const
+          </h1>
+          <p class="text-center">
+            var declarations are globally scoped or function scoped while let
+            and const are block scoped. var variables can be updated and
+            re-declared within its scope; let variables can be updated but not
+            re-declared; const variables can neither be updated nor re-declared.
+            They are all hoisted to the top of their scope. But while var
+            variables are initialized with undefined, let and const variables
+            are not initialized. While var and let can be declared without being
+            initialized, const must be initialized during declaration.
+          </p>
+        </div>
+      </div>
+      <!-- Blog 2 -->
+      <div class="card bg-[#fff] shadow-xl mb-12">
+        <div
+          class="info flex flex-col md:flex-row lg:flex-row items-center gap-4 m-6"
+        >
+          <div class="avatar">
+            <div class="w-[70px] mask mask-hexagon">
+              <img src="./images/Team-memeber-01.png" />
+            </div>
+          </div>
+          <div class="sub-info flex flex-col">
+            <p
+              class="text-[20px] font-semibold text-center md:text-left lg:text-left"
+            >
+              Steve Roger
+            </p>
+            <p
+              class="text-[15px] md:text-[12px] lg:text-[15px] text-center md:text-left lg:text-left"
+            >
+              Web Designer, MERN Developer & CEO Karen IT <br />
+              August 15, 2023
+            </p>
+          </div>
+        </div>
+        <div class="h-[2px] bg-gray-400 w-[90%] m-auto"></div>
+        <div class="blog-info px-9 pb-9">
+          <h1
+            class="text-[25px] md:text-[30px] lg:text-[30px] text-center my-2"
+          >
+            The use cases of null and undefined
+          </h1>
+          <p class="text-center">
+            Null is basically an assignment value given to a variable. The
+            variable which has been assigned as null contains no value. When we
+            assign null as a value to any variable, it means that it is empty or
+            blank. It is to show that the variable has no value. Also, null is
+            an object in JavaScript. Unlike null, the value of an undefined
+            variable is set by JavaScript as undefined. The variable gets
+            created at the run-time. When we do not pass an argument for a
+            function parameter, the default value is taken as undefined.
+            Besides, when a function doesn't return a value, it returns
+            undefined.
+          </p>
+        </div>
+      </div>
+      <!-- Blog 3 -->
+      <div class="card bg-[#fff] shadow-xl mb-12">
+        <div
+          class="info flex flex-col md:flex-row lg:flex-row items-center gap-4 m-6"
+        >
+          <div class="avatar">
+            <div class="w-[70px] mask mask-hexagon">
+              <img src="./images/team1.jpg" />
+            </div>
+          </div>
+          <div class="sub-info flex flex-col">
+            <p
+              class="text-[20px] font-semibold text-center md:text-left lg:text-left"
+            >
+              Curtis Conor
+            </p>
+            <p
+              class="text-[15px] md:text-[12px] lg:text-[15px] text-center md:text-left lg:text-left"
+            >
+              Front End, Vue Developer & CEO DaisyFy <br />
+              November 28, 2021
+            </p>
+          </div>
+        </div>
+        <div class="h-[2px] bg-gray-400 w-[90%] m-auto"></div>
+        <div class="blog-info px-9 pb-9">
+          <h1
+            class="text-[25px] md:text-[30px] lg:text-[30px] text-center my-2"
+          >
+            Definition of amazing and awesome REST API
+          </h1>
+          <p class="text-center">
+            An API, or application programming interface, is a set of rules that
+            define how applications or devices can connect to and communicate
+            with each other. A REST API is an API that conforms to the design
+            principles of the REST, or representational state transfer
+            architectural style. For this reason, REST APIs are sometimes
+            referred to RESTful APIs. REST APIs can be developed using virtually
+            any programming language and support a variety of data formats. The
+            only requirement is that they align to the following six REST design
+            principles
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
