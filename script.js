@@ -121,3 +121,11 @@ let displayVideoInfo = (video) => {
 };
 
 // Sort videos upon clicking a button
+let sortByView = () => {
+  console.log("hi");
+};
+
+// Redirect to blog page
+let redirectToBlog = () => {
+  window.location.href = "blog.html";
+};
